@@ -1,0 +1,75 @@
+// Extra small devices (portrait phones, less than 576px)
+@media screen and (max-width: 575.98px) { 
+    .contenedor{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr) ;
+        grid-template-rows: 4rem 2fr 2fr 8rem 4rem;
+        grid-gap:20px;
+
+
+        grid-template-areas: "menu menu menu menu"
+                         "contenido contenido contenido contenido"
+                         "contenido contenido contenido contenido"
+                         "newsletter newsletter newsletter newsletter"
+                         "footer footer footer footer";
+    }
+    #aside{
+        display: none;
+    }
+    .newsletter {
+        max-height: 15rem;
+        color: floralwhite;
+    }
+    .contenido {
+        grid-column: span 4;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row;
+        max-height: 8rem;
+        .menu__logo{
+            font-size: 1.25rem;
+        }
+        .menu__nav ul {
+
+            .menu__input{
+                width: 6.25rem;
+            }
+            li:first-of-type{
+            display: none;
+        }
+    }
+}
+}
+
+// Small devices (landscape phones, less than 768px)
+@media screen and  (max-width: 767.98px) { 
+    .contenedor{
+         grid-template-areas: "menu menu menu menu"
+                         "contenido contenido contenido contenido"
+                         "contenido contenido contenido contenido"
+                         "newsletter newsletter newsletter newsletter"
+                         "footer footer footer footer";
+    }
+    .newsletter {
+        max-height: 15rem;
+        color: floralwhite;
+    }
+    .contenido {
+        width: 100%;
+    }
+    #aside{
+        display: none;
+        .menu {
+        display: flex;
+        flex-direction: row;
+        .menu__nav ul li:first-of-type{
+            display: none;
+        }
+    }
+   
+}
+}
+
+// Medium devices (tablets, less than 992px)
+//@media screen and (min-width: 991.98px)

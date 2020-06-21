@@ -1,0 +1,47 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    grid-template-rows: 0.35fr 2fr 2fr 0.5fr 4rem;
+    grid-gap:20px;
+
+    grid-template-areas: "menu menu menu menu"
+                         "contenido contenido contenido aside"
+                         "contenido contenido contenido aside"
+                         "newsletter newsletter newsletter newsletter"
+                         "footer footer footer footer"
+                         
+}                        
+.contenido{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-area: contenido;
+}
+.menu{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-area: menu;
+}
+.listado-izquierdo{
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-area: aside;
+}
+.newsletter{
+    grid-column-start:1 ;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-area: newsletter;
+
+}
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    grid-area: footer;
+}

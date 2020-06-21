@@ -1,0 +1,15 @@
+//newsletter button---------
+.newsletter__button input,
+.newsletter__button button {
+    display: inline-block;
+    border-width: 0;
+    font-size: 13px;
+    padding: 5px 13px;
+    margin-top: 1rem;
+
+}
+
+.newsletter__button button {
+    background-color: coral;
+    color: white;
+}
